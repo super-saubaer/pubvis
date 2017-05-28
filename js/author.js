@@ -3,6 +3,7 @@
  * 
  * AuthorView is implemented as singleton (==> there can only be one dialog
  * opened at a time).
+ * 
  */
 var AuthorView = (function() {
 
