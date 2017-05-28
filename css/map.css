@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+#map {
+	position: relative;
+	width: 70%;
+	height: 70%;
+	margin: 0 auto;
+}
+
+.datamap path {
+	opacity: 0.05;
+}
+
+.datamap path:HOVER {
+	opacity: 1;
+}

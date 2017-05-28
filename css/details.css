@@ -1,0 +1,86 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 100%;
+}
+
+.detail {
+	width: 70%;
+	margin: 0 15%;
+	max-height: 90%;
+}
+
+.detail h1 {
+	text-align: left;
+}
+
+.detail h2 {
+	margin: 2% 0;
+}
+
+.author_img_container {
+	margin-right: 4%;
+	width: 50%;
+	max-width: 300px;
+	float: left;
+}
+
+#generalInfo {
+	margin: 2% 4%;
+}
+
+.dialog {
+	display: none;
+}
+
+.chart rect {
+	fill: #819090;
+	opacity: .2;
+	
+}
+
+.chart text {
+	font-size: 16px;
+	text-anchor: end;
+}
+
+#author rect:HOVER {
+	fill: white;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.section li {
+	padding: 6px 0;
+}
+
+#general li, #general a {
+	font-family: monospace;
+	font-size: 24px;
+	color: white;
+}
+
+text {
+	fill: white;
+}
+
+text.name:HOVER {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.axis text {
+	font: 14px;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: white;
+/* 	shape-rendering: crispEdges; */
+}

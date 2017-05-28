@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PubGraph</title>
+
+<!----- EXTERNAL RESOURCES ----->
+
+<!-- D3 -->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<!-- jQuery UI -->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+<!-- PubDB Parser -->
+<script type="text/javascript" src="../js/pubdb.js"></script>
+
+<!-- Fish-Eye Distortion -->
+<script type="text/javascript" src="../js/fisheye.js"></script>
+
+<!-- Data Map -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+<script src="http://datamaps.github.io/scripts/datamaps.world.min.js"></script>
+
+<!-- Slim Scroll -->
+<script type="text/javascript" src="https://rawgit.com/rochal/jQuery-slimScroll/master/jquery.slimscroll.min.js"></script>
+
+<!-- Full Page -->
+<link href="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.css" type="text/css" rel="stylesheet"></link>
+<script src="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.min.js"></script>
+
+
+<!----- PUPGRAPH RESOURCES ----->
+
+<!-- PubGraph Scripts -->
+<script type="text/javascript" src="../js/author.js"></script>
+<script type="text/javascript" src="../js/util.js"></script>
+<script type="text/javascript" src="../js/collab.js"></script>
+<script type="text/javascript" src="../js/period.js"></script>
+<script type="text/javascript" src="../js/map.js"></script>
+
+
+<!-- PubGraph Style Sheets -->
+<link href="../css/main.css" type="text/css" rel="stylesheet"></link>
+<link href="../css/graph.css" type="text/css" rel="stylesheet"></link>
+<link href="../css/details.css" type="text/css" rel="stylesheet"></link>
+</head>
+
+<body>
+
+	<div id="fullpage">
+		<div class="section">
+			<div style="text-align: center;">
+				<h1>Welcome to PubVis</h1>
+				<h2>Scroll down to get to the visuals</h2>
+				<h2>Scroll down again to get to the filter settings</h2>
+			</div>
+		</div>
+		<div class="section">
+			<div class="slide">
+				<div id="graph"></div>
+			</div>
+			<div class="slide">
+				<div id="map" style="position: relative; width: 1000px; height: 600px; margin: 0 auto;"></div>
+			</div>
+		</div>
+		<div class="section">
+			<h1>Filters</h1>
+			<div id="graph_filter">
+				<div id="slider_text" class="text">Time Range: 2014 - 2015</div>
+				<div id="slider-range" class="margin"></div>
+				<input id="slider_button" value="Build Graph" class="margin">
+				<div id="name_text" class="text">Authors:</div>
+				<input id="autocomplete" class="margin">
+			</div>
+		</div>
+		<div class="section" id="author" data-anchor="author">
+			<div class="slide">
+				<div class="detail" id="general"></div>
+			</div>
+			<div class="slide">
+				<div class="detail accordion" id="publications">
+			</div>
+			<div class="slide">
+				<div class="detail" id="coauthors"></div>
+			</div>
+			</div>
+			<div class="slide">
+				<div class="detail" id="activity"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="loadingContainer">
+		<div id="loadingJello">
+			<img alt="Loading ..." src="../img/loading.gif">
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="../js/graph.js"></script>
+
+<!-- main.js to load data -->
+<script type="text/javascript" src="../js/main.js"></script>
+
+
+</html>

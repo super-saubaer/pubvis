@@ -1,0 +1,90 @@
+@CHARSET "UTF-8";
+
+
+#graph
+{
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+}
+
+#headline
+{
+	position: relative;
+	text-align: center;
+	top: 20px;
+	left: 20px;
+	width: 65%;
+	border: solid 1px white;
+}
+
+.text
+{
+	color: white;
+	font-family: Monospace;
+	font-size: 25px;
+	padding: 8px;
+
+}
+
+#headline_text
+{
+	color: white;
+	font-family: Helvetica;
+	font-size: 25px;
+	padding: 8px;
+}
+
+#graph_filter
+{
+	margin: 0 auto;
+	width: 50%;
+}
+
+#slider-range
+{
+	width: 75%;
+	margin-left: 12.5%;
+}
+
+#name_text
+{
+	text-align: center;
+	margin-top: 30px;
+}
+
+
+
+#slider_text
+{
+	margin-top: 45px;
+	text-align: center;
+}
+
+.margin
+{
+
+}
+
+#autocomplete
+{
+	margin: 0 auto;
+	margin-left: 12.5%;
+	width: 75%;
+}
+
+#autocomplete_pubs
+{
+	margin: 0 auto;
+	margin-left: 12.5%;
+	width: 75%;
+}
+
+#slider_button
+{
+	position: relative;
+	width: 25%;
+	margin-top: 45px;
+	margin-left: 37.5%;
+}
+

@@ -1,0 +1,148 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: "super-font";
+	/*
+	src: url('../fonts/Chunkfive.otf') format('truetype');
+	src: url('../fonts/Lobster.otf') format('truetype');
+	src: url('../fonts/Helsinki.ttf') format('truetype');
+	font-family: 'Ubuntu', sans-serif;
+	*/
+	
+	src: url('../fonts/Capture_it.ttf') format('truetype');	
+	
+}
+
+* {
+	
+	font-family: monospace;
+	
+}
+
+body, .stage 
+{
+	background: #042029; 
+}
+
+#welcome h1 {
+	font-size: 3em; /*112px;*/
+	margin-bottom: 48px;
+}
+
+#welcome p {
+	font-family: super-font,  monospace;
+	font-size: 1em;/* 	32px; */
+	color: white;
+	padding-bottom: 18px;
+}
+
+#intro_text
+{
+	margin: 0 auto;
+	width: 80%;
+}
+
+p {
+	font-family: monospace;
+	font-size: 32px;
+	color: white;
+	
+}
+
+.intro_block
+{
+	margin-top: 20px;
+	font-size: 24px;
+	text-align: justify;
+}
+
+
+h1 {
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 48px;
+}
+
+h1, h2 {
+	font-family: super-font,  monospace;
+	font-weight: normal;
+	text-align: center;
+	color: white;
+}
+
+#welcome {
+	text-align: center;
+	visibility: hidden;
+}
+
+#loadingContainer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #042029;
+	opacity: 0.7;
+	
+	/* On top of all */
+	z-index: 1000;
+}
+
+#loadingContainer img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 75px;
+	width: 75px;
+	margin: -32.5px 0 0 -32.5px;
+}
+
+
+/* Navigation bar */
+#pageNav {
+	position: absolute;
+	top: 1%;
+	left: 1%;
+	
+	/* Not visible on welcome page. Will be faded in when the user moves to the next vertical level. */
+	display: none; 
+	
+	/* On top of everything except loading image */
+	z-index: 999;
+}
+
+#pageNav li {
+	color: #042029;
+	list-style-type: none;
+	margin-top: 7.5%;
+	padding: 5% 5%;
+	background-color: white;
+	opacity: .1;
+	border-radius: 10px;
+	font-size: 15px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#pageNav li.active {
+	opacity: .7;
+}
+
+#pageNav li.disabled {
+	visibility: hidden;
+}
+
+
+/* Some adjustments to the design of the fullpage.js navigation elements */
+
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
+	background-color: white;
+	border-bottom-color: white;
+	opacity: .7;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	background-color: white;
+	border-bottom-color: white;
+	opacity: .1;
+}
